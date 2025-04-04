@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MY PORTFOLIO </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background: linear-gradient(to right, #6a11cb, #2575fc); 
+            color: white; 
+        }
+        .navbar { 
+            background: rgba(0, 0, 0, 0.8); 
+            padding: 15px; 
+            text-align: center; 
+            position: fixed; 
+            width: 100%; 
+            top: 0; 
+            z-index: 1000; 
+        }
+        .navbar a { 
+            color: white; 
+            margin: 0 15px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            transition: color 0.3s; 
+        }
+        .navbar a:hover { 
+            color: #ffeb3b; 
+        }
+        .section { 
+            padding: 50px; 
+            text-align: center; 
+            margin-top: 60px; 
+        }
+        .skills, .projects, .certificates { 
+            display: flex; 
+            justify-content: center; 
+            gap: 20px; 
+            flex-wrap: wrap; 
+        }
+        .card { 
+            background: rgba(255, 255, 255, 0.3); 
+            padding: 20px; 
+            border-radius: 10px; 
+            width: 250px; 
+            text-align: center; 
+            transition: transform 0.3s; 
+        }
+        .card:hover { 
+            transform: scale(1.05); 
+        }
+        .contact a { 
+            color: #ffeb3b; 
+            text-decoration: none; 
+            transition: color 0.3s; 
+        }
+        .contact a:hover { 
+            color: white; 
+        }
+        img { 
+            max-width: 100%; 
+            border-radius: 10px; 
+        }
+        .profile-photo { 
+            border-radius: 50%; 
+            width: 150px; 
+            height: 150px; 
+            object-fit: cover; 
+            margin: 20px auto; 
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="section">
+        <img src="yourphoto.jpg" alt="yourphoto" class="profile-photo">
+        <h1>Hello, I'm <span style="color: #ffeb3b;">ANUBHAV DUBEY </span></h1>
+        <p>An Electronics and Computer Science Engineering Student</p>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="section" style="background: rgba(0, 0, 0, 0.5);">
+        <h2>About Me</h2>
+        <p>I am a passionate engineer specializing in electronics and Computer Science. I have completed my schooling from <b>NRC School </b> 
+        and my Junior College was <b>RKT College, Ulhasnagar</b>. Right from my childhood, I loved to see the working and manufacturing of electronic gadgets, various machines, robots, aeroplanes, and much more. I also used to make DIY projects like superhero cosplay, best out of waste, etc. during my school life and I used to upload their making on YouTube, which made it even more exciting. All such factors contributed to my journey towards pursuing Engineering.</p>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills" class="section">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <div class="card"><b>Java</b><br></div>
+            <div class="card"><b>C Programming</b><br></div>
+            <div class="card"><b>3D Printing</b><br></div>
+            <div class="card"><b>Video Editing</b><br></div>
+             <div class="card"><b>Effective Communication </b><br></div>
+		<div class="card"><b>Data Analytics </b><br></div>
+		<div class="card"><b>Multilingual</b><br></div>
+                </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects" class="section" style="background: rgba(0, 0, 0, 0.5);">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>LINE FOLLOWING CAR 🚙 </h3>
+                
+                <p>Built during our winter workshop, A robotic vehicle that follows a path using IR sensors and an Arduino microcontroller. Our team implemented PID control for better accuracy, making the car efficient in path correction and stability. This project enhanced our embedded systems and robotics skills, with applications in automated transport and industrial automation.</p>
+            </div>
+            <div class="card">
+                <h3>SMART ACCIDENT PREVENTION 📱 </h3>
+                
+                <p>As a physics project,a Smart System to detect vehicle which can cause road accident and stop them at once. This helps in prevention ofserious accidents and loss of life that happens in overcrowded area  .</p>
+            </div>
+<div class="card">
+                <h3>WEATHER AI 🤖 </h3>
+                
+                <p>As a Codethon project , my team made an AI which suggests proper attire and beverages when a person specifies his travel destination. This AI was fully developed using PYTHON and used API of CHATGPT to enhance its search capacity.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certificates Section -->
+    <div id="certificates" class="section" style="background: rgba(0, 0, 0, 0.5);">
+        <h2>Certificates</h2>
+        <div class="certificates">
+            <div class="card">
+                <h3>Certificate 1</h3>
+                <img src="certificate1.jpg" alt="Certificate 1" width="200">
+                <p>***</p>
+            </div>
+            <div class="card">
+                <h3>Certificate 2</h3>
+                <img src="certificate2.jpg" alt="Certificate 2" width="200">
+                <p>***</p>
+            </div>
+
+            <div class="card">
+                <h3>Certificate 3</h3>
+                <img src="certificate3.jpg" alt="Certificate 3" width="200">
+                <p>***</p>
+            </div>
+
+            <div class="card">
+                <h3>Certificate 4</h3>
+                <img src="certificate4.jpg" alt="Certificate 4" width="200">
+                <p>***</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="section contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:your-email@example.com">satisdubey9@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/anubhav-dubey-20584b329/">LinkedIn Profile</a></p>
+    </div>
+</body>
+</html>
